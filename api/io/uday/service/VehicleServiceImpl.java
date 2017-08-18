@@ -60,7 +60,7 @@ public class VehicleServiceImpl implements VehicleService{
 	public void runVehicleRules(Vehicle vehicle, VehicleReading vehicleReading){
 		
 		NameValueReferableMap facts = new FactMap<>();
-		facts.setValue("readLineRpm", vehicle.getReadlineRpm());
+		facts.setValue("readLineRpm", vehicle.getRedlineRpm());
 		facts.setValue("engineRpm", vehicleReading.getEngineRpm());
 		facts.setValue("fuelVolume", vehicleReading.getFuelVolume());
 		facts.setValue("maxFuelVolume", vehicle.getMaxFuelVolume());

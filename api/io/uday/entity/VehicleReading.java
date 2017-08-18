@@ -15,7 +15,7 @@ public class VehicleReading {
 	private String vin;
 	private double latitude;
 	private double longitude;
-	private Timestamp timeStamp;
+	private Timestamp timestamp;
 	private float fuelVolume;
 	private int speed;
 	private int engineHp;
@@ -32,12 +32,12 @@ public class VehicleReading {
 	}
 	
 		
-	public Timestamp getTimeStamp() {
-		return timeStamp;
+	public Timestamp getTimestamp() {
+		return timestamp;
 	}
 
-	public void setTimeStamp(Timestamp timeStamp) {
-		this.timeStamp = timeStamp;
+	public void setTimestamp(Timestamp timestamp) {
+		this.timestamp = timestamp;
 	}
 
 

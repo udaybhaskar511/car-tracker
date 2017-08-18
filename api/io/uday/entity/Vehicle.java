@@ -13,7 +13,7 @@ public class Vehicle {
 	private String make;
 	private String model;
 	private int year;
-	private int readlineRpm;
+	private int redlineRpm;
 	private float maxFuelVolume;
 	private Timestamp lastServiceDate;
 	//private Date lastServiceDate;
@@ -49,11 +49,11 @@ public class Vehicle {
 	public void setYear(int year) {
 		this.year = year;
 	}
-	public int getReadlineRpm() {
-		return readlineRpm;
+	public int getRedlineRpm() {
+		return redlineRpm;
 	}
-	public void setReadlineRpm(int readlineRpm) {
-		this.readlineRpm = readlineRpm;
+	public void setRedlineRpm(int redlineRpm) {
+		this.redlineRpm = redlineRpm;
 	}
 	public float getMaxFuelVolume() {
 		return maxFuelVolume;
