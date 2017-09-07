@@ -1,0 +1,21 @@
+<div align="center">
+  <h3>Num of High alerts triggered for all vehicles</h3>
+</div>
+<table class="table" mdSort (mdSortChange)="sortData($event)">
+  <tr>
+    <th md-sort-header="vin">Vin</th>
+    <th md-sort-header="make">Make</th>
+    <th md-sort-header="model">Model</th>
+    <th md-sort-header="highAlerts">High Alerts</th>
+  </tr>
+
+  <tr *ngFor="let highalert of vehiclesHighAlerts">
+    <td>{{highalert[0]}}</td>
+    <td>{{highalert[1]}}</td>
+    <td>{{highalert[2]}}</td>
+    <td>{{highalert[3]}}</td>
+  </tr>
+</table>
+<div>
+  <a [routerLink]="['/vehicles']" class="btn btn-primary">Go Back</a>
+</div>

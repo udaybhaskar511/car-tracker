@@ -1,0 +1,29 @@
+<table class="table">
+  <thead class="thead-inverse">
+  <tr>
+    <th>VIN</th>
+    <th>Make</th>
+    <th>Model</th>
+    <th>Year</th>
+    <th>RedlineRpm</th>
+    <th>MaxFuelVolume</th>
+    <th>LastServiceDate</th>
+    <th>GeoLocation</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let vehicle of vehiclesList">
+    <td><a [routerLink] = "['/vehicles', vehicle.vin]">{{vehicle.vin}}</a></td>
+    <td>{{vehicle.make}}</td>
+    <td>{{vehicle.model}}</td>
+    <td>{{vehicle.year}}</td>
+    <td>{{vehicle.redlineRpm}}</td>
+    <td>{{vehicle.maxFuelVolume}}</td>
+    <td>{{vehicle.lastServiceDate | date: "y-MM-dd" }}</td>
+    <td><a [routerLink]="['/vehiclegeolocation', vehicle.vin]" >GO NOW</a></td>
+  </tr>
+  </tbody>
+</table>
+<div>
+  <a [routerLink] = "['/sorthighalerts']">Click to see High alerts</a>
+</div>

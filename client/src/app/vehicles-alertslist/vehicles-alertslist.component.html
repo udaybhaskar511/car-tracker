@@ -1,0 +1,24 @@
+<div style="text-align:center">
+  <h3>
+    All Historical alerts for {{vin}}
+  </h3>
+</div>
+<table class="table">
+  <thead class="thead-inverse">
+  <tr>
+    <th>Alert Id</th>
+    <th>Priority</th>
+    <th>Trigger timestamp</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let alert of vehicleAlertsList">
+    <td>{{alert.id}}</td>
+    <td>{{alert.alertPriority}}</td>
+    <td>{{alert.alertTriggerTime | date: "y-MM-dd HH: mm: ss" }}</td>
+  </tr>
+  </tbody>
+</table>
+<div>
+  <a [routerLink] = "['/vehicles']" class="btn btn-primary">Go Back</a>
+</div>
